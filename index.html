@@ -12,7 +12,8 @@
 .heart{position:fixed;animation:f 8s linear infinite}@keyframes f{from{transform:translateY(100vh);opacity:0}to{transform:translateY(-120vh);opacity:1}}
 </style></head><body>
 <div class="lockScreen"><div class="box">
-<h2>🔒 Type our Anniversay</h2>
+<h2>🔒type your birthday</h2>
+    <p>day/month/year</p>
 <input id="password" type="password" readonly placeholder="Enter PIN">
 <div class="pad">
 <button onclick="add('1')">1</button><button onclick="add('2')">2</button><button onclick="add('3')">3</button>
@@ -28,7 +29,7 @@
 <p><b>Forever Yours,<br>Your one and only baby,bejay ❤️</b></p>
 </div></div>
 <script>
-const PASSWORD="151123";
+const PASSWORD="180808";
 function add(n){let i=password;if(i.value.length<6)i.value+=n}
 function del(){password.value=password.value.slice(0,-1)}
 function unlock(){if(password.value===PASSWORD){document.querySelector('.lockScreen').style.display='none';letter.style.display='flex'}else{wrong.textContent='❌ Wrong PIN';password.value=''}}
